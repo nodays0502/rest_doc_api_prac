@@ -1,0 +1,46 @@
+= Spring REST Docs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+
+==== 게시글 조회
+요청 필드
+
+include::{snippets}/find_board/path-parameters.adoc[]
+요청 예시
+include::{snippets}/find_board/http-request.adoc[]
+응답 필드
+include::{snippets}/find_board/response-fields.adoc[]
+응답 예시
+include::{snippets}/find_board/http-response.adoc[]
+
+==== 게시글 등록
+요청 필드
+include::{snippets}/register_board/request-fields.adoc[]
+요청 예시
+include::{snippets}/register_board/http-request.adoc[]
+
+응답 예시
+include::{snippets}/register_board/http-response.adoc[]
+
+
+==== 게시글 수정
+요청 필드
+
+include::{snippets}/patch_board/path-parameters.adoc[]
+include::{snippets}/patch_board/request-fields.adoc[]
+요청 예시
+include::{snippets}/patch_board/http-request.adoc[]
+응답 예시
+include::{snippets}/patch_board/http-response.adoc[]
+
+==== 게시글 삭제
+요청 필드
+
+include::{snippets}/delete_board/path-parameters.adoc[]
+요청 예시
+include::{snippets}/delete_board/http-request.adoc[]
+응답 예시
+include::{snippets}/delete_board/http-response.adoc[]
+

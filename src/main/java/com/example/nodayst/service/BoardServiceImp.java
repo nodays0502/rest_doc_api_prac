@@ -36,9 +36,10 @@ public class BoardServiceImp implements BoardService {
 
     @Override
     public void changeBoard(long boardId, ChangeBoardRequestDto changeBoardRequestDto) {
-        Board board = boardRepository.findById(boardId).orElseThrow(() -> {
-            throw new NotFoundBoardIdException();
-        });
+//        Board board = boardRepository.findById(boardId).orElseThrow(() -> {
+//            throw new NotFoundBoardIdException();
+//        });
+        Board board = findBoard(boardId);
         board.changeTitle(changeBoardRequestDto.getTitle());
         board.changeDesc(changeBoardRequestDto.getDesc());
     }
